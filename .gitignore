@@ -1,0 +1,6 @@
+.idea
+out
+*.iml
+platforms/android/CordovaLib
+platforms/android/gen/
+.DS_Store

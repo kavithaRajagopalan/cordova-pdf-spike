@@ -3,7 +3,14 @@
         "installed": [],
         "uninstalled": []
     },
-    "config_munge": {},
+    "config_munge": {
+        "res/xml/config.xml": {
+            "/*": {}
+        },
+        "AndroidManifest.xml": {
+            "/*": {}
+        }
+    },
     "installed_plugins": {},
     "dependent_plugins": {}
 }

@@ -3,7 +3,17 @@
         "installed": [],
         "uninstalled": []
     },
-    "config_munge": {},
+    "config_munge": {
+        "framework": {
+            "AssetsLibrary.framework": {},
+            "MobileCoreServices.framework": {},
+            "CoreGraphics.framework": {},
+            "QuickLook.framework": {}
+        },
+        "config.xml": {
+            "/*": {}
+        }
+    },
     "installed_plugins": {},
     "dependent_plugins": {}
 }

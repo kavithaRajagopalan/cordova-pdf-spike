@@ -19,6 +19,7 @@
 var app = {
     // Application Constructor
     initialize: function() {
+        alert("initialize");
         this.bindEvents();
     },
     // Bind Event Listeners
@@ -26,6 +27,7 @@ var app = {
     // Bind any events that are required on startup. Common events are:
     // 'load', 'deviceready', 'offline', and 'online'.
     bindEvents: function() {
+        alert("bindEvents");
         document.addEventListener('deviceready', this.onDeviceReady, false);
     },
     // deviceready Event Handler
@@ -37,13 +39,29 @@ var app = {
     },
     // Update DOM on a Received Event
     receivedEvent: function(id) {
-        var parentElement = document.getElementById(id);
-        var listeningElement = parentElement.querySelector('.listening');
-        var receivedElement = parentElement.querySelector('.received');
+        // var parentElement = document.getElementById(id);
+        // var listeningElement = parentElement.querySelector('.listening');
+        // var receivedElement = parentElement.querySelector('.received');
 
-        listeningElement.setAttribute('style', 'display:none;');
-        receivedElement.setAttribute('style', 'display:block;');
+        // listeningElement.setAttribute('style', 'display:none;');
+        // receivedElement.setAttribute('style', 'display:block;');
 
-        console.log('Received Event: ' + id);
-    }
+        // console.log('Received Event: ' + id);
+        // navigator.load.url("file:///sdcard/Download/apache-maven.pdf");
+        // window.pdfViewerPlugin.openpdf("/sdcard/Download/apache-maven.pdf");
+    //     cordova.plugins.fileOpener.open(
+    //     '/mnt/sdcard/Download/apache-maven.pdf', 
+    //     'application/pdf', 
+    //     { 
+    //         error : function(errorObj) { 
+    //             alert('Errored'); 
+    //         },
+    //         success : function () {
+    //             alert('file opened successfully');              
+    //         }
+    //     }
+    // );
+        alert("After calling the file");
+    // }
+}
 };
